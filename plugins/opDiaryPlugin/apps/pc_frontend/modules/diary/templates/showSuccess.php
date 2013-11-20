@@ -36,6 +36,17 @@
 <?php endif; ?>
 <?php echo op_url_cmd(op_decoration(nl2br($diary->body))) ?>
 </div>
+<!--Like Plugin -->
+<div class="like" style="display: none;">
+<span class="like-wrapper" data-like-id="<?php echo $diary->getId() ?>" data-like-target="D" member-id="<?php echo $diary->member_id ?>">
+<span class="like-post">いいね！</span>
+<span class="like-cancel">いいね！を取り消す&nbsp;</span>
+<span class="like-you">あなたが「いいね！」と言っています。</span><br />
+<a class="like-list" href="#likeModal" data-toggle="modal"></a>
+<div class="like-list-member"></div>
+<span class="like-friend-list"></span>
+</span>
+</div>
 </dd>
 </dl>
 <?php if ($diary->member_id === $myMemberId): ?>
@@ -68,3 +79,23 @@ op_include_form('formDiaryComment', $form, array(
 <?php endif; ?>
 
 <?php op_include_line('lineLinkToDiaryMemberList', link_to(__('Diaries of %1%', array('%1%' => $member->name)), 'diary_list_member', $member)) ?>
+
+<script id="LikelistTemplate" type="text/x-jquery-tmpl">
+<table>
+<tr style="padding: 2px;">
+<td style="width: 48px; padding: 2px;"><a href="${profile_url}"><img src="${profile_image}" width="48"></a></td>
+<td style="padding: 2px;"><a href="${profile_url}">${name}</a></td>
+</tr>
+</table>
+</script>
+
+<div id="likeModal" class="modal hide">
+  <div class="modal-header">
+    <h1>「いいね！」と言っている人</h1>
+  </div>
+  <div class="like-modal-body">
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn close" data-dismiss="modal" aria-hidden="true">閉じる</a>
+  </div>
+</div>
