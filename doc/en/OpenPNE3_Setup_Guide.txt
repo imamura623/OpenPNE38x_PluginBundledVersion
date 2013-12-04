@@ -30,13 +30,6 @@ Database Server
 Setup
 =====
 
-Downloading OpenPNE 3
----------------------
-
-Download a package of OpenPNE 3 from the following URL.
-
-http://www.openpne.jp/pne-downloads/
-
 Setting Files
 -------------
 
@@ -66,18 +59,7 @@ Set the files to be the following structure:
       +-- pc_backend.php
         :
 
-Copying Config Files
---------------------
-
-Copy config files as follows
-
-::
-
-  $ cd OpenPNE3
-  $ cp config/ProjectConfiguration.class.php.sample config/ProjectConfiguration.class.php
-  $ cp config/OpenPNE.yml.sample config/OpenPNE.yml
-  
-Then you should change the config values in OpenPNE.yml as your environment. Make sure you set "base_url" and "mail_domain", because they are used for posting and delivering mail.
+  Then you should change the config values in OpenPNE.yml as your environment. Make sure you set "base_url" and "mail_domain", because they are used for posting and delivering mail. OpenPNE.yml is in the config directory.
 
 Install Command Execution
 -------------------------

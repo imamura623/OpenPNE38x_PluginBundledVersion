@@ -30,13 +30,6 @@ PHP
 セットアップ
 ============
 
-OpenPNE3 のソースコードを入手する
----------------------------------
-
-以下の URL に記載されている情報に従って、 OpenPNE 3 のソースコードをダウンロードしてください。
-
-http://www.openpne.jp/pne-downloads/
-
 ファイルの設置
 --------------
 
@@ -65,18 +58,7 @@ http://www.openpne.jp/pne-downloads/
       +-- pc_backend.php
         :
 
-設定ファイルをコピー
---------------------
-
-以下のようにして設定ファイルをコピーしてください。
-
-::
-
-  $ cd OpenPNE3
-  $ cp config/ProjectConfiguration.class.php.sample config/ProjectConfiguration.class.php
-  $ cp config/OpenPNE.yml.sample config/OpenPNE.yml
-
-その後、 OpenPNE.yml の設定値を環境に合わせて変更してください。特に base_url と mail_domain はメール投稿、メール配信の際に利用されるので必ず設定をおこなってください。
+configディレクトリ内にある OpenPNE.yml の設定値を環境に合わせて変更してください。特に base_url と mail_domain はメール投稿、メール配信の際に利用されるので必ず設定をおこなってください。
 
 インストールコマンドの実行
 --------------------------
