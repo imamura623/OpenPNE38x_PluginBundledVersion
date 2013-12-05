@@ -70,7 +70,6 @@ configディレクトリ内にある OpenPNE.yml の設定値を環境に合わ�
   $ ./symfony openpne:install
 
 このコマンドはデータベースを削除し、作り直します。
-※但し、以上のコマンドはバンドルプラグインがダウンロード・インストールされないため、バンドルプラグインをダウンロード・インストールする場合は、以下の --internet オプションを付けてコマンドを実行してください。
 
 ::
 
@@ -111,8 +110,6 @@ openpne:install コマンドを実行すると、はじめに、以下の事項�
 ::
 
  $ ./symfony openpne:fast-install --dbms=mysql --dbuser=username --dbpassword=password --dbhost=localhost --dbport=10 --dbname=databasename --dbsock=/tmp/mysql.sock
-
-※但し、以上のコマンドはバンドルプラグインがダウンロード・インストールされないため、バンドルプラグインをダウンロード・インストールする場合は、--internet オプションを付けてコマンドを実行してください。
 
 mod_rewrite の設定
 ------------------
