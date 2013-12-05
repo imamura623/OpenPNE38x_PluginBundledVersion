@@ -114,13 +114,6 @@ The following command is an usage example. So you should change to suitable item
 
 NOTE: The above command does not download and install bundled plugins. If you download and install these plugins, you should add '--internet' option.
 
-Delete the Development Files
-----------------------------
-
-::
-
-  $ ./symfony project:clear-controllers
-
 mod_rewrite Configuration
 -------------------------
 
