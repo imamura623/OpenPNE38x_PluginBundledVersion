@@ -71,7 +71,6 @@ Execute the following command to begin installing process.
   $ ./symfony openpne:install
   
 This command deletes the database and rebuild it. 
-NOTE: The above command does not download and install bundled plugins. If you download and install these plugins, you should add --internet option as follows.
 
 ::
 
@@ -111,15 +110,6 @@ The following command is an usage example. So you should change to suitable item
 ::
 
  $ ./symfony openpne:fast-install --dbms=mysql --dbuser=username --dbpassword=password --dbhost=localhost --dbport=10 --dbname=databasename --dbsock=/tmp/mysql.sock
-
-NOTE: The above command does not download and install bundled plugins. If you download and install these plugins, you should add '--internet' option.
-
-Delete the Development Files
-----------------------------
-
-::
-
-  $ ./symfony project:clear-controllers
 
 mod_rewrite Configuration
 -------------------------
